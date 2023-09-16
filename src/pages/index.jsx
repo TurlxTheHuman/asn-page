@@ -2,20 +2,6 @@ import { useState, useCallback, useEffect } from 'react';
 import axios from 'axios';
 
 function Main() {
-  const [ipInfo, setIPinfo] = useState("");
-
-  const getData = async () => {
-    const res = await axios.get("http://ip-api.com/json/");
-    console.log(res.data);
-    setIPinfo(res.data);
-    console.log(ipInfo)
-  };
-
-  useEffect(() => {
-    //passing getData method to the lifecycle method
-    getData();
-  }, []);
-
   return (
     <body>
       <div id='center'>
