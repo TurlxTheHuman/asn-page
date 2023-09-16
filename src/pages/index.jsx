@@ -19,6 +19,7 @@ function Main() {
   return (
     <body>
       <div id='center'>
+        <a href='https://turlxthehuman.com'><img src='/assets/img/coolturtle.webp' className='turtle'/></a>
         <h1>AS49132</h1>
         <p>a personal development network</p>
         <div className='links'>
