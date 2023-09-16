@@ -2,10 +2,6 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './assets/css/global.css'
 
-// Components
-import Header from './components/header'
-import Footer from './components/footer'
-
 
 // Main Pages
 import Main from './pages/index'
@@ -26,13 +22,12 @@ return (
     <Header />
 
     <Routes>
-      <Route path="/" element={ /* INDEX PAGE */
+      <Route path="/" element={
         <body>
           <Main />
         </body>
       }/>
-        
-      {/* <Route path="/about" element={<About />}/> */}
+      
 
     </Routes>
     <Footer />
