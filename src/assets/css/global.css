@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;900&display=swap');
+
+:root {
+    font-family: Inter;
+    font-weight: 400;
+
+    /* Colors */
+    --background: #f0f0f0;
+    --box-light: #2F971E;
+    --text: #0000;
+    --text-secondary: #787878;
+
+    --primary: #1E2697;
+    --secondary: #F2F2F2;
+    --blue-light-primary: #1e2697;
+
+    background-color: var(--background); 
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden; /* Show vertical scrollbar */
+
+  }
+  
+p {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#center {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.25rem;
+  color: rgb(20, 19, 19);
+}
+
+#center p {
+  margin-bottom: 30px;
+  color: #b1b1b1;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+a:hover {
+  color:#2F971E;
+}
