@@ -127,6 +127,8 @@ a {
 
 #ixp .ix a {
   transition-duration: 200ms;
+  color: #000000;
+  font-weight: bold;
 }
 
 #ixp .ix a:hover {
