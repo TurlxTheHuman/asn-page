@@ -4,8 +4,6 @@ import axios from 'axios';
 function Main() {
 
   const [peeringDB, setPeeringDB] = useState(null);
-
-  // Function to get data from PeeringDB or use cached data if available
   const getData = async () => {
     const cachedData = localStorage.getItem('peeringDBData');
     if (cachedData) {
@@ -15,19 +13,15 @@ function Main() {
       const cacheAge = (currentTime - cachedTime) / (1000 * 60); // Cache age in minutes
 
       if (cacheAge <= 1440) {
-        // Use cached data if it's less than or equal to 24 hours old
         setPeeringDB(parsedData.data);
         return;
       }
     }
 
-    // If no cached data or cache is older than 24 hours, fetch new data
     try {
       const response = await axios.get("https://www.peeringdb.com/api/net/34140");
       const newData = response.data.data[0];
       setPeeringDB(newData);
-
-      // Store the fetched data and timestamp in local storage
       localStorage.setItem('peeringDBData', JSON.stringify({ data: newData, timestamp: new Date() }));
     } catch (error) {
       console.error("Error fetching data from PeeringDB:", error);
@@ -35,7 +29,6 @@ function Main() {
   };
 
   useEffect(() => {
-    // Call the getData function when the component mounts
     getData();
   }, []);
 
