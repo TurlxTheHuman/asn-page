@@ -21,6 +21,19 @@
 
   }
   
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Start with 0% opacity (invisible) */
+    }
+    50% {
+      opacity: 1; /* Reach 100% opacity (fully visible) at 50% of the animation */
+    }
+    100% {
+      opacity: 0; /* Back to 0% opacity (invisible) at the end of the animation */
+    }
+  }
+
 p {
   font-size: 1.5rem;
   color: var(--text);
@@ -51,9 +64,10 @@ h1 {
 }
 
 #center p {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #b1b1b1;
   font-size: 1rem;
+  
 }
 
 a {
@@ -69,4 +83,68 @@ a:hover {
 .turtle {
   width: 48px;
   height: auto;
+}
+
+.green-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #2F971E;
+  animation: fadeInOut 5s ease-in-out infinite; /* Adjust the duration and timing as needed */
+}
+
+.red-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #971e1e;
+  animation: fadeInOut 2s ease-in-out infinite; /* Adjust the duration and timing as needed */
+}
+
+/* Style the ul */
+#ixp {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the li items */
+#ixp li {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 20rem;
+}
+
+#ixp .ix {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  transition-duration: 200ms;
+}
+
+#ixp .ix a {
+  transition-duration: 200ms;
+}
+
+#ixp .ix a:hover {
+  color:#2F971E;
+  transition-duration: 200ms;
+}
+
+#ixp .ix p {
+  margin: 5px;
+}
+
+#ixp .ix .ixname {
+  font-weight: bold;
+  color: black;
+}
+
+
+#ixp .ix .ixspeed {
+  font-weight: bold;
+  color: black;
 }
