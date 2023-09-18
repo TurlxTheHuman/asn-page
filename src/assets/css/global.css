@@ -17,7 +17,6 @@
 
     background-color: var(--background); 
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: hidden; /* Show vertical scrollbar */
 
   }
   
@@ -108,11 +107,11 @@ a:hover {
 }
 
 /* Style the li items */
-#ixp li {
+#ixp {
   margin-bottom: 5px;
   padding: 10px;
   border: 2px solid #000000;
-  border-radius: 20rem;
+  border-radius: 2rem;
 }
 
 #ixp .ix {
