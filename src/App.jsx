@@ -11,13 +11,6 @@ function App() {
 return (
 <Router>
   <div>
-
-    <head>
-      <title>My Website Template</title>
-      <link rel="icon" href="/assets/img/favicon.ico" /> { /* Favicon */ }
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" /> { /* Font Awesome */ }
-    </head>
-
     <Routes>
       <Route path="/" element={
         <body>

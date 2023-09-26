@@ -51,7 +51,7 @@ function Main() {
           <a href='https://bgp.he.net/AS49132'> bgp.he.net</a>
           <a href='https://bgp.tools/as/49132'> bgp.tools</a>
         </div>
-          <ul id='ixp'>
+        <ul id='ixp'>
         {data && data.netixlan_set.map((set, index) => (
         <li className='ix' key={index}>
           <a href={'https://www.peeringdb.com/ix/'+set.ix_id}>{set.name}</a>
