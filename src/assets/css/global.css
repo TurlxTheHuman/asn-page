@@ -6,10 +6,10 @@
     font-weight: 400;
 
     /* Colors */
-    --background: #f0f0f0;
+    --background: #ffffff;
     --box-light: #2F971E;
-    --text: #0000;
-    --text-secondary: #787878;
+    --text: #00000000;
+    --text-secondary: #6c6c6c;
 
     --primary: #1E2697;
     --secondary: #F2F2F2;
@@ -64,7 +64,7 @@ h1 {
 
 #center p {
   margin-bottom: 10px;
-  color: #b1b1b1;
+  color: var(--text-secondary);
   font-size: 1rem;
   
 }
